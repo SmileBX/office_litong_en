@@ -98,8 +98,8 @@ html {
   /* //padding: 0 px 0; */
 }
 .abo_box_taber>li{
-padding-left: 15px;
-padding-right: 33px;
+/* padding-left: 15px; */
+/* padding-right: 33px; */
 flex: 1;
 text-align: end;
 border-right: 2px solid #efefef;

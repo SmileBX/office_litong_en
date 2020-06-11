@@ -8,20 +8,19 @@
  
   //判断进入那个页面
       var tab=getQueryString("tab")
-      //console.log(tab)
+      console.log(tab)
 
-          Introduction() ;
+          Introduction() ;//公司简介
  
-          development()  ;
+          development()  ;//发展历程
          
-          distribution() ;
+          distribution() ;//公司分布
 
-          qualification();
+          qualification();//荣耀资质
 
-          responsibility();
+          responsibility(); //社会责任
        
       if(tab){
-     
         
         $(".abo_box_taber>li").eq(tab).addClass("taber_title_on").siblings().removeClass("taber_title_on");
         $(".abo_taber_content .abo_taber_box").eq(tab).show().siblings(".abo_taber_box").hide()
@@ -29,6 +28,7 @@
 
      
       }else{
+		 
         //直接进入调取
         Introduction()
         $(".abo_box_taber>li").eq(0).addClass("taber_title_on").siblings().removeClass("taber_title_on");
@@ -58,29 +58,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
  
 
 //首先调取关于力同banenr
@@ -89,9 +66,10 @@
       var strlogo=` <img class="banner-img" src="${imgapi+date[0].smallimages}" alt="">`
       $(".abo_banner").html(strlogo)
       //列表
-      let taberlist=date[0].children;
+      // let taberlist=date[0].children;//元数据重复公司介绍 删除第一个 2020/6/11
+	  let taberlist=date[0].children.slice(1);
       let stritem="";
-     // //console.log(taberlist,"孩子")
+     console.log(taberlist,"孩子")
       for(var i=0;i<taberlist.length;i++){
        stritem+=`<li>${taberlist[i].name}</li>`
       }
@@ -106,6 +84,7 @@
       <!-- 关于力同taber切换 -->   
         $(".abo_box_taber li").off("click").on("click",function(){
           var index = $(this).index();
+		  console.log(index,"kkkkkkkkkk") 
           switch(index){
             case 0:
             Introduction();
@@ -172,7 +151,7 @@ function Introduction(){
     
     //关于力同文章介绍
       ajax("get",port.artic,"26/p/1/s/10/type/2",function(date){
-       //console.log(date,22233)
+       console.log(date,22233)
        var bannerimg=string_arr(date[0].attachfiles)
         //渲染banenr图片
         var strbanner="";

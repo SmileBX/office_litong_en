@@ -80,7 +80,7 @@ $(".nav_right_box_btn").click(function(){
   }
    url=url+'?lan='+lan
     console.log(url,"828282")
-  $(location).attr('href', url);
+  $(location).attr('href', url); 
 })
 
 //我要留言提交
