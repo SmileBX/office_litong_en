@@ -1,0 +1,695 @@
+body,
+html {
+    width: 100%;
+    /* overflow-y: hidden; */
+    background-color: #FFFFFF;
+    /* height: 100%; */
+    height: auto;
+  
+}
+.middle-box-box-big{
+    background-color: #FFFFFF;
+}
+.banner-box{
+    width: 100%;
+    /* height: 100%; */
+    /* overflow: hidden; */
+    margin-top: 64px;
+  }
+  .swiper-container {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    height: 100%;
+  }
+  .banner-box .swiper-button-next,.banner-box  .swiper-button-prev{
+      color: #FFFFFF ;
+  }
+  .banner-box>.swiper-container>.banner-box-pag{
+      bottom: 40px ;
+  }
+ 
+  .swiper-slide { 
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .banner-img{
+    width: 100%;
+  }
+  /* 分页器改点 */
+  .banner-box .swiper-button-next, .banner-box .swiper-button-prev {
+    /* width: 43px;
+  height: 42px;
+  background: rgba(0,0,0,1);
+  opacity: 0.5 */
+  }
+  .banner-box .swiper-button-next:after,.banner-box .swiper-button-prev:after {
+    /* color: #efefef;
+    font-size: 12px; */
+}
+  
+
+
+
+/*--- 中间 */
+.middle-box{
+  width: 1200px;
+  margin: 0 auto;
+}
+.title_a{
+  margin-top: 30px;
+}
+.title_a .company {
+    font-size: 26px;
+    color: #333333;
+    font-weight:bold;
+    /* font-family: "Noto Sans SC"; */
+    border-bottom: 3px solid #223966;
+}
+.title_a .tau {
+    font-size: 26px;
+    color: #333333;
+    font-weight: bold;
+    /* font-family: Source Han Sans CN; */
+}
+
+.title_a .eng {
+    font-family: Source Han Sans CN Normal;
+    color: #999999;
+    font-size: 16px;
+}
+
+.In_figure {
+    /* margin-left: 160px;
+    margin-top: 19px; */
+    width: 85%;
+    margin: 19px auto 0;
+}
+/* .In_figure .navbox1 { */
+    /* width: 243px; */
+    /* height: 181px; */
+    /* background: rgba(18, 36, 86, 1); */
+    /* border-radius: 7px;
+    /* margin-right: 27px; */
+    
+   
+/* } */
+/* ------------------公司分布的nav */
+.navbox1{
+  width: 100%;
+  display: flex;
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 40px;
+  justify-content:space-between;
+  /* padding-left: 10px; */
+}
+.navbox1 div {
+  
+  font-size: 16px;
+}
+.navbox1 div img{
+  width: 100%;
+
+}
+/* 鼠标移入效果 */
+.navbox1-name{
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.navbox1-name>p{
+    /* height: 50%; */
+    /* text-align: center; */
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbox1-name .icon-navbox1{
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+.navbox1>div{
+  position: relative;
+  border-radius: 5px;
+}
+.navbox1>div:hover{
+  /* box-shadow: 0 0 6px 0; */
+  /* background-image: url("../img/home_img_shanghai@2x.png"); */
+  /* background-image: linear-gradient(242deg,rgba(0,0,0,0),#000); */
+  transition: .3s;
+  z-index: 10;
+  border-radius: 5px;
+
+}
+.navbox1>div:hover .navbox1-name{
+    /* background-color: #203653; */
+    /* opacity: .5; */
+
+}
+
+
+.navbox1>div:hover .navbox1-name{
+  position: absolute;
+  top: 0;
+  color: #FFFFFF;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.navbox1 .navbox1-name:hover p{
+    opacity: 1;
+    color: #FFFFFF;
+    /* z-index: 100; */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ---------公司-图片介绍1------------- */
+.nav-button-img{
+  width: 100%;
+
+}
+.nav-button-img div{
+  width: 100%;
+  padding: 0;
+}
+.nav-button-img div a{
+    display: inline-block;
+    width: 100%;
+}
+
+.nav-but-img{
+  width: 100%;
+}
+/* ----------------公司图片介绍2--------------- */
+.Publicity_img2 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.Publicity_img2 .choice{
+  display: flex;
+  justify-content: space-between;
+}
+.Publicity_img2 .choice-img{
+  width: 49%;
+}
+.choice-img img{
+    width: 100%;
+}
+
+
+
+
+
+/* ========== */
+/* ----------------为什么选择我们--------------- */
+.Choose-us{
+    width: 100%;
+    /* height: 620px; */
+    margin:0;
+    padding:0;
+    position: relative;
+    /* border: 1px solid red; */
+    /* background: url("../img/home_bg_why@2x.png") no-repeat; */
+    /* background-size: 100% ; */
+}
+.Choose-us img{
+    width: 100%;
+}
+.Choose-box1{
+    width: 100%;
+    margin: 0 auto;
+    /* height: 50%; */
+    /* border: 1px solid #FFFFFF; */
+    /* position: absolute; */
+    /* top: 0px; */
+    /* background: url("../img/index/xuanze.jpg") no-repeat; */
+    /* background-size: 100%; */
+}
+.Choose-box1 img{
+    width: 100%;
+
+}
+
+
+
+.Choose-box1-content {
+   
+    /* background-size: 100% ; 
+    width: 1200px;
+    margin: 0 auto; */
+
+}
+.chose-box1-text{
+    text-align: center;
+    color: red;
+    padding-top: 20px;
+}
+.Chose-box1-number{
+    /* background: url("../img/weishenmtest.png") no-repeat;
+    background-position-x:center; */
+}
+.Chose-box1-number ul{
+   width: 1200px;
+   margin: 0 auto;
+    background-size: 100% ;
+    /* width: 100%; */
+    height: 500px;
+    display: flex;
+    color: #FFFFFF;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 200px 0px 0px;
+}
+.Chose-box1-number-nav{
+    width: 1200px;
+    margin: -120px auto 0px;
+}
+.Chose-box1-number-nav img{
+    width: 100%;
+}
+
+.Choose-box2{
+    width: 100%;
+}
+.Choose-box2-centent{
+    width: 1200px;
+}
+.Chose-box1-number ul li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.Chose-box1-number ul li p{
+    text-align: center;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+    /* display: flex; */
+    display: inline-block;
+    align-items: flex-start;
+}
+.Chose-box1-number ul li p span{
+    font-size: 40px;  
+}
+.Chose-box1-number ul li p em{
+    /* margin-top: -15px; */
+    font-size: 20px;
+    vertical-align: text-top;
+   
+}
+.Chose-box1-number ul li span{
+    text-align: center;
+    font-size: 20px;
+}
+/* 为什么选择我们导航 */
+.Choose-box2{
+    width: 1200px;
+    /* height: 50px; */
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.Choose-box2-centent{
+    width: 100%;
+    margin-top: -130px;
+}
+.Choose-box2-centent img{
+    width: 100%;
+}
+
+
+
+
+
+/* ------------------选择我们结束 */
+/* 新闻资讯 */
+.journalism{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.journalism-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.journalism-title p span{
+    font-size: 26px;
+    color: #333333;
+    /* font-weigh:bold; */
+    font-weight: bold;
+}
+
+.journalism-title p .journalism-title-text{
+    border-bottom: 3px solid #223966;
+}
+
+.journalism-title p em{
+    font-size: 12px;
+    color: #999999;
+}
+.journalism-title ul{
+    display: flex;
+}
+.journalism-title ul li{
+    margin: 0 20px;
+    color: #333333;
+    font-size: 14px;
+    padding-bottom: 2px;
+    cursor:pointer;
+}
+.journalism-choice{
+    font-weight: bold;
+    /* border-bottom:2px solid #103379 ; */
+}
+.journalism-title ul .journalism-tab-end{
+    margin-right: 0;
+}
+
+.journalism-box .tab-item11 {
+    display: none;
+}
+/* taber切换 */
+.tab-item11{
+    display: none;
+}
+.journalism-box .show11{
+    display: block;
+}
+/* 新闻展示样式 */
+.tab-item11-img-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 17px;
+}
+.tab-item11-img-box>div{
+    width: 48%;
+}
+.tab-item11-img-box1{
+    /* padding-left: 20px; */
+}
+.tab-item11-img-box img{
+    width: 100%;
+    height: 100%;
+    max-height:180px;
+  
+}
+/* 列表 */
+.journalism-news{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.journalism-news li{
+    width: 48%;
+    /* border: 1px solid red; */
+}
+
+.journalism-news-list-center{
+    display: flex;
+}
+.journalism-news-list-center .span-text{
+    width:64px;
+    height:64px;
+    margin: 0 5px 0;
+}
+.journalism-news-list-center .span-text span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background:rgba(239,239,239,1);
+    color: #333333;
+  
+}
+.journalism-news-list-center .span-text em{
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+}
+.journalism-list-p{
+    display: flex;
+    flex-direction: column;
+}
+.journalism-list-p p{
+    font-size: 14px;
+    color: #999999;
+    display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+line-height: 20px;
+margin-left: 16px;
+}
+.journalism-list-p .title{
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+
+
+
+@media screen and (max-width: 1919px) {
+    .Chose-box1-number-nav {
+        margin-top: -82px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+  /* 公司分布点的适配 */
+  .middle-box{
+    width: 100%;
+    margin: 0px;
+    padding:0px;
+  
+  }
+  .Chose-box1-number ul {
+    width: 100%;
+}
+.Chose-box1-number-nav{
+    width: 100%;
+    margin: 0px auto 0px;
+}
+  
+  .journalism-title {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: flex-start;
+    font-size: 20px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.journalism-title p{
+    padding-left: 20px;
+}
+
+  .Choose-box1-content {
+      width: 100%;
+      margin: 0px;
+      height: unset;
+      
+      /* background-position: ; */
+      /* background: url("../img/index/xuanze.png") no-repeat center top; */
+      background-size: 120%;
+  }
+  .Chose-box1-number ul{
+    /* background-size: 252%;
+    background-position: -755px -60px;
+    padding-top:120px ; */
+    padding-top: 116px;
+    height: 200px;
+    font-size: 12px;
+    }
+    .journalism{
+        width:100%;
+        margin: 0px;
+    }
+    .Choose-box2{
+        width: 100%;
+    }
+    .Choose-box2-centent{
+        margin-top: 0;
+    }
+    .Chose-box1-number ul li p{
+
+        font-size: 30px;
+
+        font-weight: bold;
+    }
+    .Chose-box1-number ul li span{
+        text-align: center;
+        font-size: 10px;
+    }
+    /* //banne分页器位置 */
+    .banner-box>.swiper-container>.banner-box-pag{
+        bottom: 30px ;
+    }
+}
+@media screen and (max-width:1024px) and (min-width:768px){
+   
+    .Chose-box1-number ul li p{
+
+        font-size: 20px;
+
+        font-weight: bold;
+    }
+    .Chose-box1-number ul li span{
+        text-align: center;
+        font-size: 12px;
+    }
+  
+    
+ .company .title_a .tau{
+     font-size: 16px !important;
+   }
+    .navbox1{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .navbox1 div{
+      width: 30%;
+      margin-top: 10px;
+    }
+   
+}
+@media screen and (max-width:768px) {
+    .Chose-box1-number ul li p{
+
+        font-size: 16px;
+
+        font-weight: bold;
+    }
+    .Chose-box1-number ul li span{
+        text-align: center;
+        font-size: 12px;
+    }
+    .Chose-box1-number ul li p em{
+        font-size: 12px;
+       
+       
+    }
+    .title_a {
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+    .title_a .company{
+        font-size: 20px;
+    }
+      .journalism-title>p{
+        margin-top: 10px;
+        padding-left: 10px;  
+      }
+      .journalism-title ul li:nth-child(1){
+          margin-left: 10px !important;
+
+      }
+    .journalism-title>p>span{
+        font-size: 20px;  
+    
+    }
+    .title_a .tau{
+        font-size: 20px;
+    }
+    .title_a .eng{
+        font-size: 12px;
+    }
+  .navbox1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .navbox1>div{
+    width: 30%;
+    margin-top: 20px;
+  }
+  .Chose-box1-number ul li {
+    width: 25%;
+    font-size: 12px;
+    margin-bottom: 0px;
+
+    }
+   
+    .Chose-box1-number ul{
+        padding-top:78px ;
+       height: 160px;
+    }
+    .Chose-box1-number p{
+        margin-bottom: 0px;
+    }
+    .journalism-news .journalism-news-li{
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+     /* //banne分页器位置 */
+     .banner-box>.swiper-container>.banner-box-pag{
+        bottom: 10px ;
+    }
+  
+
+  
+
+}
+
+@media screen and (max-width: 992px) {
+    .banner-box{
+        width: 100%; 
+    }
+   
+    
+}
+@media only screen and (max-width:414px){
+    .Choose-box1-content {      
+        /* background-position: ; */
+        background: url("../img/index/xuanze.png") no-repeat center top;
+        background-size: 162%;
+    }
+    .Chose-box1-number ul {
+        padding-top: 56px;
+        height: 176px;
+    }
+    .journalism-news li{
+        width: 100%;
+
+    }
+
+
+}
+@media only screen and (max-width:325px){
+
+}
+
+@media screen and (min-height:812px) and (max-height:820px){
+
+}

@@ -1,0 +1,1188 @@
+html,body{
+  height: auto;
+}
+
+.exp_box {
+  width     : 100%;
+  margin-top: 64px;
+}
+
+.exp_box_img {
+  width: 100%;
+}
+
+.exp_box_img>img {
+  width: 100%;
+}
+
+.particular_box {
+  display: none;
+}
+
+/* 一级tab切换 */
+.exp_box_title {
+  width        : 100%;
+  border-bottom: 1px solid rgb(236, 234, 234);
+  box-shadow   : 0px 15px 20px -24px #5E5E5E;
+  height       : 72px;
+  /* margin-bottom: 30px; */
+}
+
+.exp_box_title_box {
+  width    : 1200px;
+  margin   : 0 auto;
+  display  : flex;
+  flex-wrap: wrap;
+  cursor   : pointer;
+}
+
+.exp_box_title_name,
+.exp_box_title_tab {
+  width: 50%;
+}
+
+.exp_box_title_name {
+  display    : flex;
+  align-items: center;
+}
+.abo_box_title_text {
+  /* flex: 1; */
+  width: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  padding-left: 10px;
+}
+
+.abo_box_title_text .company {
+  border-bottom: 2px solid #223966;
+}
+
+.abo_box_title_text .eng {
+  color: #999999;
+  font-size: 10px;
+}
+
+.exp_box_title_tab {
+  color          : #999999;
+  font-size      : 14px;
+  display        : flex;
+  justify-content: flex-end;
+}
+
+.exp_box_title_tab_active {
+  color      : #333333;
+  font-weight: bold;
+}
+
+.exp_box_title_tab>span {
+  margin-top   : 27px;
+  margin-bottom: 25px;
+  padding-left : 15px;
+  padding-right: 15px;
+  border-right : 2px solid #efefef;
+
+}
+
+.exp_box_title_tab>.exp_title_line {
+  padding-right: 0px;
+  border-right : none;
+}
+
+#exp_particular {
+  margin-top: 5px;
+}
+
+/*----------- 新闻中心 */
+.press_center {
+  width: 100%;
+}
+
+.press_center {
+  width: 100%;
+}
+
+.press_center_title {
+  width: 100%;
+}
+
+.press_center_title_box {
+  width    : 1200px;
+  margin   : 0 auto;
+  display  : flex;
+  flex-wrap: wrap;
+}
+
+.press_center_title_box>ul {
+  width          : 100%;
+  display        : flex;
+  justify-content: center;
+}
+
+.dynamic_title {
+  display: flex;
+  margin-top: 20px;
+}
+
+.dynamic_title>li {
+  color     : #999999;
+  font-size : 14px;
+  /* width  : 103px; */
+  height    : 20px;
+  text-align: center;
+  /* padding: 12px 4px 11px 3px; */
+  cursor    : pointer;
+  padding   : 0 15px 0;
+  /* margin : 0 15px 0; */
+  border-right: 2px solid #efefef;
+}
+.dynamic_title>li span{
+  margin: 0 20px 0;
+}
+.dynamic_title_line {
+  border-right: 2px solid #efefef;
+
+}
+
+/* 新闻中心title选中 */
+.dynamic_title .dynamic_title_active {
+  color         : #223966;
+  font-weight   : bold;
+  padding-bottom: 5px;
+  border-bottom : 2px solid #223966;
+}
+
+/* 内容 */
+.press_center_box {
+  width : 1200px;
+  margin: 0 auto;
+}
+
+.press_dynamic_box {
+  display: none;
+}
+
+/* 行业动态列表展示 */
+.press_list {
+  width: 100%;
+  cursor: pointer;
+}
+
+.press_list_box {
+  display        : flex;
+  justify-content: space-between;
+  margin-bottom  : 38px;
+}
+
+/* 左侧时间 */
+.press_list_left_time {
+  font-size     : 20px;
+  color         : #999999;
+  font-weight   : bold;
+  width         : 15%;
+  display       : flex;
+  flex-direction: column;
+}
+.press_list_left_time em{
+  /* text-align: center; */
+  font-size: 30px;
+}
+
+.press_list_left_time>span {
+  font-size: 30px;
+  color    : #333333;
+  /* text-align: center; */
+}
+
+/* 中间内容 */
+.press_list_content {
+  font-size      : 12px;
+  color          : #999999;
+  /* font-weight : bold; */
+  /* margin-right: 34px;
+  margin-left    : 85px; */
+  width          : 70%;
+  /* padding-left: 91px; */
+  padding-right  : 34px;
+}
+
+.press_list_content>ul>li>em {
+  margin-bottom: 5px;
+}
+
+.press_list_content>ul>li>h5 {
+  color        : #333333;
+  font-size    : 20px;
+  margin-bottom: 8px;
+  display       : -webkit-box;
+  font-weight   : 400;
+  font-size     : 14px;
+  font-weight: bold;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow          : hidden;
+}
+
+.press_list_content>ul>li>p {
+  margin-top    : 8px;
+  color         : #666666;
+  margin-bottom : 11px;
+  display       : -webkit-box;
+  font-weight   : 400;
+  font-size     : 14px;
+  /* font-weight: 500; */
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow          : hidden;
+
+}
+
+/* 右边图片 */
+.press_list_right_img {
+  /* flex      : 1; */
+  width        : 15%;
+  /* height    :228px; */
+  border-radius: 8px;
+  /* opacity   :0.5; */
+  overflow     : hidden;
+
+}
+
+.press_list_right_img>img {
+  width    : 100%;
+  /* height:228px !important; */
+}
+.press_list>li:hover{
+  background-color: #efefef;
+  
+}
+
+/* 分页样式 */
+.footer_press_box {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.footer_press_box>span {
+  width        : 61px;
+  height       : 30px;
+  background   : rgba(216, 218, 221, 1);
+  border-radius: 2px;
+  color        : #efefef;
+  margin       : 0 10px 0;
+  line-height  : 30px;
+  text-align   : center;
+  cursor       : pointer;
+}
+
+.press_page_list_box {
+  /* width      : 230px; */
+  height     : 30px;
+  overflow   : hidden;
+  /* position: relative; */
+}
+
+.press_page_list {
+  /* width   : 230px; */
+  /* width      : 1000px;
+  height     : 30px; */
+  /* border  :  1px solid red; */
+  display    : flex;
+  /* position: absolute;
+  top */
+  /* position: relative; */
+
+}
+
+.press_page_list>li {
+  width        : 30px;
+  height       : 30px;
+  background   : #D8DADD;
+  border-radius: 2px;
+  text-align   : center;
+  line-height  : 30px;
+  margin-right : 10px;
+  color        : #efefef;
+}
+.press_page_list>.tab-naext_active{
+  background   : rgba(34, 57, 102, 1);
+}
+
+/* 分页详情样式 */
+/* .tab_a{
+  color    : #999999;
+  font-size: 14px;
+}
+.tab_a_active{
+  color      : #333333;
+  font-weight: bold;
+}
+.exp_box_title_tab>span>.tab_a :hover{
+  color: #999999 ;
+} */
+
+
+
+
+/* --------------------------新闻中心结束 */
+
+
+
+
+
+
+
+/* 精彩活动 */
+.exhibition_box_con {
+  display: none;
+}
+
+.container-fluid {
+  width : 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.exhibition_box {
+  width : 1200px;
+  margin: 0 auto;
+}
+
+.exh_box_title {
+  text-align   : center;
+  margin-top   : 53px;
+  margin-bottom: 79px;
+  font-size    : 26px;
+  color        : #333333;
+  font-weight  : 500;
+}
+
+.exh_box {
+  width: 100%;
+}
+
+.exh_box_img {
+  width: 100%;
+}
+
+.exh_title {
+  font-size  : 16px;
+  font-weight: 500;
+  display    : -webkit-box;
+  /* -webkit-box-orient; */
+  text-overflow     : ellipsis;
+  overflow          : hidden;
+  text-overflow     : ellipsis;
+  display           : -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.exh_title_con {
+  font-size: 14px;
+  color    : #666666;
+  display  : -webkit-box;
+  /* -webkit-box-orient; */
+  text-overflow     : ellipsis;
+  overflow          : hidden;
+  text-overflow     : ellipsis;
+  display           : -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.exh_title_con_loc {
+  display      : block;
+  margin       : 0 auto;
+  width        : 121px;
+  height       : 40px;
+  line-height  : 40px;
+  background   : rgba(34, 57, 102, 1);
+  border-radius: 3px;
+  color        : #efefef;
+  font-size    : 14px;
+  text-align   : center;
+  margin-bottom: 40px;
+  margin-top   : 30px;
+}
+
+.container-fluid ul li:hover {
+  /* border: 1px solid red; */
+ /* // background-color: red; */
+  z-index: 2;
+  -webkit-box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  -webkit-transform: translate3d(0,-2px,0);
+  transform: translate3d(0,-2px,0);
+}
+
+/* .exhibition_box_con>.container-fluid>ul>li>.exh_title_con_loc :hover{
+  color: #efefef !important;
+} */
+.container-fluid-btn {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  /* color       : #efefef; */
+}
+
+.container-fluid-btn>span {
+  background   : rgba(216, 218, 221, 1);
+  border-radius: 2px;
+  text-align   : center;
+  line-height  : 22px;
+  margin       : 0 5px 0;
+  padding      : 3px;
+  cursor       : pointer;
+}
+
+.container-fluid-btn>ul {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  margin-bottom  : 0px;
+}
+
+.container-fluid-btn>ul>li {
+  width        : 30px;
+  height       : 30px;
+  background   : rgba(216, 218, 221, 1);
+  border-radius: 2px;
+  text-align   : center;
+  line-height  : 30px;
+  margin       : 0 5px 0;
+  color        : #efefef;
+
+}
+
+.container-fluid-btn>ul>.fluid-btn_active {
+  background-color: #223966;
+}
+
+
+/*-------------------------- 精彩活动结束 */
+
+
+
+
+
+
+
+/* 团建活动 */
+/* .group_title_line{ */
+/* border-bottom: 1px solid rgb(236, 234, 234); */
+/* box-shadow   : 0px 20px 20px -24px #5E5E5E; */
+/* } */
+.group_title {
+  width      : 1200px;
+  margin     : 0px auto;
+  height     : 42px;
+  background : rgba(255, 255, 255, 1);
+  line-height: 72px;
+  color      : #999999;
+  font-size  : 12px;
+}
+
+.group_title span {
+  color      : #333333;
+  font-size  : 16px;
+  font-weight: 500;
+}
+
+.group_title_botline {
+  padding-bottom: 5px;
+  border-bottom : 1px solid #223966;
+}
+
+.group_box {
+  width   : 1200px;
+  margin  : 0 auto;
+  overflow: hidden;
+}
+
+.group_centent {
+  width: 100%;
+}
+
+.group_centent_title {
+  font-size     : 26px;
+  color         : #333333;
+  text-align    : center;
+  padding-top   : 63px;
+  padding-bottom: 80px;
+  margin-bottom : 0px;
+  font-weight   : 500;
+}
+
+/* taber切换banner */
+.group_taber_box {
+  width: 100%;
+}
+
+.group_taber_banner {
+  width: 100%;
+
+}
+
+.group_taber_banner>li {
+  width      : 100%;
+  /* height  : 100%; */
+  align-items: center;
+
+}
+
+.group_taber_banner>li {
+  display: none;
+  /* transit; */
+
+
+}
+
+.group_taber_banner>.active_li {
+  display: block;
+}
+
+/* .group_taber_banner .group_taber_banner_boxactive{
+  display: flex;
+} */
+.group_taber_banner>li>.group_taber_banner_box {
+  display    : flex;
+  align-items: center;
+}
+
+.group_taber_banner_img {
+  width: 70%;
+}
+
+.group_taber_banner_img>img {
+  width: 100%;
+}
+
+.group_taber_banner_text {
+  height        : 80%;
+  background    : rgba(255, 255, 255, 1);
+  border-radius : 6px;
+  width         : 40%;
+  margin-left   : -10%;
+  /* box-shadow    : 0px 23px 24px -24px #5E5E5E; */
+  padding-top   : 46px;
+  padding-left  : 30px;
+  /* padding-right : 50px; */
+  padding-bottom: 45px;
+  /* box-shadow: 0px 20px 20px -24px #5E5E5E; */
+  box-shadow: 0px 7px 7px -7px #5E5E5E; 
+  /* -webkit-box-shadow: 0 15px 30px rgba(0,0,0,.04);
+  box-shadow: 0 15px 30px rgba(0,0,0,.04);
+  -webkit-transform: translate3d(0,-2px,0);
+  transform: translate3d(0,-2px,0); */
+}
+
+.group_taber_banner_text>p {
+  display: -webkit-box;
+  /* -webkit-box-orient; */
+  text-overflow     : ellipsis;
+  overflow          : hidden;
+  text-overflow     : ellipsis;
+  display           : -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color             : #666666;
+  font-size         : 14px;
+  margin-top        : 17px;
+  margin-bottom     : 47px;
+
+}
+
+.group_taber_banner_text>span {
+  font-size  : 28.5px;
+  color      : #333333;
+  font-weight: 500;
+
+}
+
+.group_taber_banner_text>em {
+  color    : #666666;
+  font-size: 16px;
+}
+
+
+/* 无限滚动 */
+.group_banner {
+  width      : 100%;
+  padding-top: 39px;
+
+}
+
+#group_banner_box1 {
+  position: relative;
+  overflow: hidden;
+}
+
+#group_banner_box1 .swiper-slide {
+  width        : 20%;
+  padding-right: 10px;
+  padding-left : 10px;
+  margin-right : 0px;
+  opacity      : 0.6;
+}
+
+#group_banner_box1 .swiper-slide-active {
+  opacity: 1;
+}
+
+#group_banner_box1 .swiper-slide>img {
+  width: 100%;
+}
+
+#group_banner_box1>.swiper-button-next,
+#group_banner_box1>.swiper-button-prev {
+  /* font-size: 15px;
+  color    : #333333;
+  opacity  : 1; */
+  font-size: 12px;
+  /* color: #efefef; */
+  color: #333333;
+
+}
+#group_banner_box1>.swiper-button-next{
+  right: 0;
+}
+#group_banner_box1>.swiper-button-prev {
+  left: 0;
+}
+#group_banner_box1 .swiper-slide p{
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+}
+/*-------------------------- 团建活动结束 */
+
+
+
+
+
+
+
+
+
+
+/* 招聘精英 */
+.particular_box {
+  width : 1200px;
+  margin: 0 auto;
+}
+
+.job_box {
+  width: 100%;
+}
+
+.job_vacancy_title {
+  font-size       : 26px;
+  color           : #333333;
+  text-align      : center;
+  font-weight     : bold;
+  /* margin-bottom: 76px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:66px 0px 55px ;
+  background: url("../../img/back-log.png") no-repeat center;
+  background-position-y: 10px;
+  background-position-y: 37px;
+  background-size: 138px 107px;
+  /* background-color: #2F5FBE; */
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+ .abo_taber-content-title1{
+  display: inline-block;
+  font-size: 26px;
+  color: #333333;
+  text-align: center;
+  /* height: 189px; */
+  /* line-height: 189px; */
+
+}
+  .abo_taber-content-title2{
+  font-size: 12px;
+  color: #DCE1E7;
+}
+
+
+
+.job_vacancy_title2 {
+  /* margin-top   : 76px; */
+  margin-bottom: 8px;
+
+}
+
+.job_vacancy_title2>p {
+  font-size     : 16px;
+  color         : #828282;
+  text-align    : center;
+  /* font-weight: bold; */
+}
+
+.job_recommend {
+  width: 100%;
+}
+
+/* 人才理念 */
+.job_title_box {
+  display    : flex;
+  width      : 100%;
+  align-items: center;
+  margin-top : 50px;
+  flex-wrap  : wrap;
+}
+
+.job_title_box_img {
+  width: 70%;
+
+}
+
+.job_title_box_img>img {
+  width: 100%;
+
+}
+
+.job_title_box_text {
+  width           : 40%;
+  height          : 60%;
+  background-color: #ffffff;
+  border-radius   : 5px;
+  margin-left     : -10%;
+  padding         : 38px 43px 38px;
+  overflow: hidden;
+  padding-right: 0px;
+}
+
+.job_title_box_text>span {
+  font-size       : 20px;
+  color           : #333333;
+  /* margin-bottom: 38px; */
+  font-weight     : bold;
+}
+
+.job_title_box_text p {
+  font-size : 14px;
+  margin-top: 38px;
+  color     : #333333;
+  display: block;
+  display: -webkit-box;
+  margin: 0 auto;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.job_title_box_text2 {
+  width           : 40%;
+  height          : 60%;
+  background-color: #ffffff;
+  border-radius   : 5px;
+  margin-right    : -10%;
+  padding         : 38px 43px 38px;
+  z-index         : 2;
+padding-left: 0px;
+}
+/*  */
+.job_title_box_text2>span {
+  font-size       : 20px;
+  color           : #333333;
+  /* margin-bottom: 38px; */
+  font-weight     : bold;
+}
+
+.job_title_box_text2>p {
+  /* font-size : 12px;
+  margin-top: 38px;
+  color     : #333333; */
+  margin-bottom: 0px;
+}
+
+/* .job_title_box_img_flag2{
+  display: none;
+} */
+.job_title_box_img_flag2 {
+  display : none;
+  width   : 60%;
+  overflow: hidden;
+
+}
+
+.job_title_box_img_flag2>img {
+  width: 100%;
+}
+
+.job-content {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.job_title_box2{
+  display: flex;
+  justify-content: space-between;
+}
+.job_title_box_text, .job_title_box_text2{
+  /* -webkit-box-shadow: 0 15px 30px rgba(0,0,0,.04);
+  box-shadow: 0 15px 30px rgba(0,0,0,.04);
+  -webkit-transform: translate3d(0,-2px,0);
+  transform: translate3d(0,-2px,0); */
+  /* box-shadow: 0 0 6px 0; */
+  box-shadow: 0px 7px 7px -7px #5E5E5E; 
+
+
+}
+.job_title_box_text23{
+  margin-right: -10%;
+}
+/* 招聘具体内容 */
+.job-content-title {
+  text-align: center;
+  font-size : 20px;
+  width     : 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.job-content-list {
+  display       : flex;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom : 1px solid #D8D8D8;
+  background-color: #f5f5f5;
+}
+
+.job-content-list>span {
+  flex     : 1;
+  font-size: 20px;
+  color    : #828282;
+  font-weight: 500;
+
+}
+
+.job-content-list>.job-content-list_sm2 {
+  flex: 2;
+}
+
+.job-content-box {
+  width: 100%;
+}
+
+.job-content-box-con {
+  width: 100%;
+}
+
+.job-list-con-box {
+  width        : 100%;
+  display      : flex;
+  cursor       : pointer;
+  border-bottom: 1px solid #D8D8D8;
+  color        : #828282;
+
+}
+
+.job-list-con-box>span {
+  flex          : 1;
+  font-size     : 16px;
+  margin-top    : 13px;
+  padding-bottom: 14px;
+}
+
+.job-list-con-box>.job-list-con-box-sm2 {
+  flex: 2;
+}
+
+.job-list-con-box2 {
+  display: none;
+}
+
+/* 11 */
+.job-list-con-box2 {
+  padding-left: 20px;
+}
+
+.caret1 {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  /* border-bottom: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; */
+  border-left: 4px dashed;
+  border-right: 4px solid\9;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+.caret2{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-bottom: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.job-list-con-box2-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*-------------------- 招聘精英内容 */
+
+
+
+
+
+
+
+
+.active {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+
+  /* 一级taber切换 */
+  .exp_box_title_box {
+    width : 100%;
+    margin: 0;
+  }
+
+  .exp_box_title_name,
+  .exp_box_title_tab {
+    width: 100%;
+  }
+
+  /* 新闻中心title */
+  .press_center_title_box {
+    width : 100%;
+    margin: 0px;
+  }
+
+  .press_center_title_box>ul {
+    width: 100%;
+  }
+
+  /* 新闻中心内容 */
+  .press_center_box {
+    width : 100%;
+    margin: 0;
+  }
+
+  .exp_box_title_tab {
+    display        : flex;
+    justify-content: flex-start;
+  }
+
+
+  /* 团建活动 */
+  .group_box {
+    width: 100%;
+  }
+
+  .group_title {
+    width: 100%;
+  }
+
+  .group_box {
+    width: 100%;
+  }
+
+  #group_banner_box1>.swiper-button-next,
+  #group_banner_box1>.swiper-button-prev {
+    display: none;
+  }
+
+  .group_banner {
+    padding-top: 10px;
+  }
+
+  .footer {
+
+    margin-top: 20px;
+  }
+
+  /* 精彩活动 */
+  .exhibition_box {
+    width: 100%;
+  }
+
+  .container-fluid {
+    width: 100%;
+  }
+
+  /* 招聘精英内容 */
+  .particular_box {
+    width: 100%;
+
+  }
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+  .group_centent_title {
+    padding-top   : 9px;
+    padding-bottom: 40px;
+  }
+
+  #group_banner_box1 .swiper-slide {
+    width: 30%;
+  }
+
+  .group_taber_banner_text {
+    padding-top   : 0px;
+    padding-left  : 10px;
+    padding-right : 20px;
+    padding-bottom: 0px;
+  }
+
+  .group_taber_banner_text>p {
+    font-size     : 14px;
+    padding-top   : 5px;
+    padding-bottom: 0px;
+
+  }
+
+  .group_taber_banner_text>span {
+    font-size  : 16px;
+    font-weight: 500;
+
+  }
+
+  .group_taber_banner_text>em {
+    color    : #666666;
+    font-size: 16px;
+  }
+
+  #group_banner_box1 .swiper-slide {
+    padding: 0px;
+  }
+
+  /* 招聘 */
+  .job_title_box {
+    /* flex-direction: column; */
+  }
+
+
+  .job_title_box>.job_title_box_text,
+  .job_title_box>.job_title_box_img {
+    width : 100%;
+    margin: 0px;
+  }
+
+  .job_title_box>.job_title_box_text2,
+  .job_title_box>.job_title_box_img {
+    width : 100%;
+    margin: 0px;
+  }
+  .job_title_box_text, .job_title_box_text2{
+    -webkit-box-shadow: 0;
+    box-shadow: 0 ;
+    -webkit-transform: none;
+    transform:none;
+  }
+
+  .job_title_box12>.job_title_box_text {
+    width  : 100%;
+    margin : 0;
+    padding: 38px 43px;
+
+  }
+
+  .job_title_box_img_flag2 {
+    display: block;
+    width  : 100%;
+
+  }
+
+  .job_title_box_img_flag1 {
+    display: none;
+
+  }
+
+  /* 招聘列表 */
+  .job-list-con-box>span {
+    font-size: 12px;
+  }
+
+  .job-content-list>span {
+    font-size: 12px;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+  /* 左侧时间 */
+  .press_list_left_time {
+    font-size: 14px;
+
+  }
+
+  .press_list_left_time>span {
+    font-size: 12px;
+
+  }
+
+  /* 中间内容 */
+  .press_list_content {
+    font-size      : 12px;
+    width          : 65%;
+    /* padding-left: 91px; */
+    padding-right  : 34px;
+  }
+
+  .press_list_content>ul>li>h5 {
+    font-size: 14px;
+
+  }
+
+
+  /* 右边图片 */
+  .press_list_right_img>img {
+    width    : 99%;
+    /* height:228px !important; */
+  }
+  .exh_title_con_loc{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 73px;
+
+
+  }
+
+
+
+}
+
+@media screen and (max-width: 340px) {
+  .exp_box_title_tab>span {
+    /* margin-top: 27px;
+  margin-bottom  : 25px; */
+    padding-left : 2px;
+    padding-right: 2px;
+  }
+
+  .press_page_list>li {
+    margin-right: 2px;
+  }
+
+}

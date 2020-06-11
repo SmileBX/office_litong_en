@@ -1,0 +1,396 @@
+body,
+html {
+  width: 100%;
+  background: #f5f5f5;
+  /* height: 100%; */
+  height: auto;
+}
+/* 研发实力 */
+.rese-box{
+  margin-top: 64px;
+  width: 100%;
+}
+/* banner */
+.rese-box-banner{
+  width: 100%;
+}
+.rese-box-banner img{
+  width: 100%;
+}
+.res_box_content{
+  width: 1200px;
+  margin: 0 auto;
+}
+.res_title_box{
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(236, 234, 234);
+  box-shadow: 0px 15px 20px -24px #5E5E5E;
+}
+
+/* 一级title */
+.res_title{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.abo_box_title_text {
+  /* flex: 1; */
+  width: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  padding-left: 10px;
+}
+
+.abo_box_title_text .company {
+  border-bottom: 2px solid #223966;
+}
+
+.abo_box_title_text .eng {
+  color: #999999;
+  font-size: 10px;
+}
+
+
+
+
+.res_title>.res_title_con2{
+  width: 50%;
+  display: flex;
+  color: #999999;
+  justify-content:flex-end;
+  cursor: pointer;
+}
+.res_title>.res_title_con2 li{
+  /* padding-left: 60px; */
+  padding:0px 15px 0px;
+}
+
+.res_title_con2_active{
+  color: #333333;
+  font-weight: bold;
+}
+.res_title_con2_txt{
+  border-right: 2px solid #efefef;
+}
+.res_title_con2 .taber_title_on_line{
+  padding-right: 0px;
+border-right: none;
+}
+/* 一级title内容 */
+.res_content_box{
+  display: none;
+}
+
+/* 发明专利taber切换 */
+.invention{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 50px;
+  margin-top: 67px;
+  font-size: 14px;
+}
+.invention span{
+  /* margin-left: 5%; */
+  margin: 0px 20px;
+  padding-bottom: 5px;
+}
+.patent_title p{
+  border-right: 2px solid #efefef;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.invention_active{
+  color: #223966;
+    font-weight: bold;
+  border-bottom: 2px solid #223966;
+}
+.invention_con_content{
+  display: none;
+  cursor: pointer;
+}
+/* 发明专利banner */
+.res_banner{
+  width: 100%;
+}
+.swiper-text-box0-title{
+  font-weight: bold;
+}
+
+/* 轮播```````````````````` */
+#palnt_banner12 .swiper-button-next,#palnt_banner12 .swiper-button-prev,
+#swiper_res1 .swiper-button-next, #swiper_res1 .swiper-button-prev ,
+#swiper_res5 .swiper-button-next, #swiper_res5 .swiper-button-prev ,
+#swiper_res7 .swiper-button-next, #swiper_res7 .swiper-button-prev ,
+#swiper_res3 .swiper-button-next, #swiper_res3 .swiper-button-prev{
+  width: 43px;
+  height: 42px;
+  background: rgba(0,0,0,1);
+  opacity: 0.5;
+}
+#palnt_banner12 .swiper-button-next:after,#palnt_banner12 .swiper-button-prev:after,
+#swiper_res1 .swiper-button-next:after, #swiper_res1 .swiper-button-prev:after,
+#swiper_res5 .swiper-button-next:after, #swiper_res5 .swiper-button-prev:after,
+#swiper_res7 .swiper-button-next:after, #swiper_res7 .swiper-button-prev:after,
+#swiper_res3 .swiper-button-next:after, #swiper_res3 .swiper-button-prev:after{
+  color: #efefef;
+  font-size: 12px;
+}
+#swiper_res5,#swiper_res1,#swiper_res3,#swiper_res7{
+  width: 100%;
+  /* padding-top: 1000px; */
+  position: relative;
+  overflow: hidden;
+}
+.res_banner_img{
+  width: 100%;
+}
+#swiper_res1 .swiper-slide,#swiper_res5 .swiper-slide,#swiper_res3 .swiper-slide,#swiper_res7 .swiper-slide{
+  display: flex;
+  justify-content: space-between;
+
+}
+#swiper_res1 .swiper-slide>div,#swiper_res7 .swiper-slide>div,#swiper_res5 .swiper-slide>div,#swiper_res3 .swiper-slide>div{
+  width: 48%;
+}
+
+
+
+
+/* `````````````````````````````` */
+
+.res_banner_img{
+  width: 100%;
+}
+/* 底部轮播放大----------- */
+.footer_banner_swiper{
+  /* padding: 0 50px 0; */
+}
+/* #swiper_res2,#swiper_res4,#swiper_res6,#swiper_res8{
+  width: 100%;
+  position: relative;
+  padding-top: 200px;
+  margin-top: 67px;
+  margin-bottom: 112px;
+  overflow: hidden;
+
+} */
+/* #swiper_res2>.swiper-wrapper>.swiper-slide,#swiper_res8>.swiper-wrapper>.swiper-slide,#swiper_res6>.swiper-wrapper>.swiper-slide,#swiper_res4>.swiper-wrapper>.swiper-slide{
+  width: 20%;
+  padding-left: 20px;
+} */
+/* .swiper-slide-box{
+
+  position: relative;
+  width: 100%;
+
+} */
+/* #swiper_res2 .swiper-button-next, #swiper_res2 .swiper-button-prev ,
+#swiper_res6 .swiper-button-next, #swiper_res6 .swiper-button-prev ,
+#swiper_res8 .swiper-button-next, #swiper_res8 .swiper-button-prev ,
+#swiper_res4 .swiper-button-next, #swiper_res4 .swiper-button-prev 
+{
+  width: 43px;
+  height: 42px;
+  background: rgba(0,0,0,1);
+  opacity: 0.5;
+} */
+/* #swiper_res2 .swiper-button-next:after, #swiper_res2 .swiper-button-prev:after ,
+#swiper_res6 .swiper-button-next:after, #swiper_res6 .swiper-button-prev:after ,
+#swiper_res8 .swiper-button-next:after, #swiper_res8 .swiper-button-prev:after ,
+#swiper_res4 .swiper-button-next:after, #swiper_res4 .swiper-button-prev:after 
+{
+  color: #efefef;
+  font-size: 12px;
+} */
+/* 小图 */
+/* .swiper-small-img{
+  width: 100%;
+  
+} */
+/* 小图中的指示块 */
+/* .swiper-small-moverbox{
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  background: rgba(255, 0, 0, 0.3);
+  top:0;
+  left: 0;
+  cursor: move;
+  display: none;
+} */
+/* .swiper-big-box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:-200px;
+  overflow: hidden;
+  display: none;
+
+  z-index: 10;
+} */
+/* .swiper-big-box-img{
+  width: 200%;
+  position: absolute;
+  top: 0px;
+} */
+/* #swiper_res2>.swiper-button-prev,#swiper_res2>.swiper-button-next{
+  top:260px;
+  
+} */
+/* #swiper_res4>.swiper-button-next,#swiper_res6>.swiper-button-next,#swiper_res8>.swiper-button-next{
+  top:260px;
+} */
+/* #swiper_res4>.swiper-button-prev,#swiper_res6>.swiper-button-prev,#swiper_res8>.swiper-button-prev{
+  top:260px;
+} */
+
+#palnt_banner12{
+  margin-top: 67px;
+}
+
+.brief-box{
+  width: 100%;
+  margin-top: 20px;
+
+
+}
+/* .brief-box-title{
+  text-align: center;
+} */
+.brief-box-taber{
+  width: 100%;
+}
+.brief-box-taber li{
+  display: flex;
+  justify-content: space-between;
+  /* display: none; */
+  flex-wrap: wrap;
+}
+.brief-box-taber_con_img{
+ width: 38%;
+}
+.brief-box-taber_con_text{
+  width: 100%;
+}
+
+.brief-box-taber_con_img img{
+  width: 100%;
+}
+
+
+
+/* 切换样式 */
+.core_invention{
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.core_invention_img_box23{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.core_invention_img_box23 img{
+  width: 100%;
+
+}
+.core_invention_img_box23 li{
+  opacity: .5;
+  width: 19%;
+}
+.core_invention_img_box23 .imgactive{
+  opacity:1;
+}
+
+
+
+
+
+.active{
+  display: block;
+
+}
+/* 媒体查询 */
+@media screen and (max-width: 1200px) {
+  .res_box_content{
+    width: 100%;
+  }
+  .res_box_content{
+    width:100%;
+    margin: 0 ;
+  }
+  .res_title>.res_title_con1{
+    width: 100%;
+    padding-left: 20px;
+  }
+  .res_title>.res_title_con2{
+    width: 100%;
+    justify-content: start;
+    margin-top: 20px;
+  }
+  .swiper-button-next,.swiper-button-prev{
+    display: none !important;
+  }
+  .res_title>.res_title_con2 li {
+    padding-left: 10px;
+    font-family: Helvetica, Tahoma, Arial, "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei" ;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC Regular", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei" ;
+}
+.brief-box>p span,.brief-box>p span strong,.invention p,.swiper-text-box0-title,
+.abo_swipe1_swiper_text-box>p span
+{
+  font-family: Helvetica, Tahoma, Arial, "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei" !important;
+	font-family: Helvetica, Tahoma, Arial, "PingFang SC Regular", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei"  !important; 
+}
+
+
+
+   /* #swiper_res2, #swiper_res6,  #swiper_res4,  #swiper_res8{
+    padding-top: 20px;
+  } */
+  
+}
+
+@media screen and (max-width: 992px) {
+  /* .abo_box{
+    widows: 100%;
+    margin: 0 ;
+  }
+   */
+}
+@media screen and (max-width: 768px) {
+ 
+  .brief-box-taber_con_img{
+    width: 100%;
+   }
+   .brief-box-taber_con_text{
+     width: 100%;
+   }
+
+
+       /* 放大处理 */
+       /* #swiper_res2>.swiper-wrapper>.swiper-slide,#swiper_res8>.swiper-wrapper>.swiper-slide,#swiper_res6>.swiper-wrapper>.swiper-slide,  #swiper_res4>.swiper-wrapper>.swiper-slide {
+        width: 28%;
+      }
+      #swiper_res2, #swiper_res4 , #swiper_res6, #swiper_res8 {
+        padding-top: 0px;
+      }
+   */
+}
+@media screen and (max-width: 768px) {
+  .invention span{
+    margin: 0 10px 0;
+  }
+}
+@media screen and (max-width: 324px) {
+  .invention span{
+    margin: 0 8px 0;
+  }
+}

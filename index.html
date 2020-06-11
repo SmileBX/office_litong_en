@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Document</title>
+  <meta name="description" content="产品1这是产品描述" />
+  <meta name="keywords" content="力同产品，力同产品，" />
+  
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./css/com/header.css">
+  <link rel="stylesheet" href="./css/com/footer.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/bs/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+  <link rel="stylesheet" type="text/css" href="css/swiper/swiper.min.css" />
+  <!-- <link rel="stylesheet" href="./css/bs/bootstrap.min.css"> -->
+</head>
+
+<body>
+  <!-- 头部导航--z -->
+  <nav class="navbar navbar-default nav_q navbar-fixed-top">
+    <div class="nav-box">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">
+            <img src="img/nav_logo@2x.png" alt="">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-left">
+            <!-- <li class="nav_down_one  nav_down_one1">
+              <a href="./component/aboutus.html"
+                class="tab ">关于力同</a>
+              <div class="nav-box-tab">
+                <ul class="aboutus_skip">
+                  <li ><a class="nav-drop-down" href="./component/aboutus.html?tab=0">公司介绍</a></li>
+                  <li><a class="nav-drop-down" href="./component/aboutus.html?tab=1">发展历程</a></li>
+                  <li><a class="nav-drop-down" href="./component/aboutus.html?tab=2">公司分布</a></li>
+                  <li><a class="nav-drop-down" href="./component/aboutus.html?tab=3">荣耀资质</a></li>
+                  <li><a class="nav-drop-down" href="./component/aboutus.html?tab=4">社会责任</a></li>
+                </ul>  
+              </div>
+            </li> -->
+            <!-- <li class="nav_down_one nav_down_one2">
+              <a href="./component/research.html" class="tab">研发实力</a>
+              <div class="nav-box-tab">
+                <ul class="aboutus_skip">
+                  <li><a class="nav-drop-down" href="./component/research.html?tab=0">核心技术团队</a></li>
+                  <li><a class="nav-drop-down" href="./component/research.html?tab=1">知识产权</a></li>
+                </ul>  
+                
+              </div>
+            </li> -->
+            <!-- <li class="nav_down_one nav_down_one3">
+              <a href="./component/plant.html" class="tab">工厂实力</a>
+              <div class="nav-box-tab">
+                <ul class="aboutus_skip">
+                  <li><a class="nav-drop-down" href="./component/plant.html?tab=0">工厂介绍</a></li>
+                  <li><a class="nav-drop-down" href="./component/plant.html?tab=1">质量检测</a></li>
+                  <li><a class="nav-drop-down" href="./component/plant.html?tab=2">质量控制</a></li>
+                </ul>
+                
+              </div>
+            </li> -->
+            <!-- <li class="nav_down_one nav_down_one4">
+              <a href="" class="tab">产品中心</a>
+              <div class="nav-box-tab">
+                  <ul class="aboutus_skip">
+                    <li><a class="nav-drop-down" href="">芯片</a></li>
+                    <li><a class="nav-drop-down" href="">射频功能模块</a></li>
+                    <li><a class="nav-drop-down" href="">通信模块</a></li>
+                    <li><a class="nav-drop-down" href="">终端设备</a></li>
+                    <li><a class="nav-drop-down" href="">系统解决方案</a></li>
+                  </ul>
+              </div>
+            </li> -->
+            <!-- <li class="nav_down_one nav_down_one5">
+              <a href="./component/solution.html" class="tab" >解决方案</a>
+              <div class="nav-box-tab">
+                <ul class="aboutus_skip">
+                  <li><a class="nav-drop-down" href="./component/solution.html?tab=0">安保</a></li>
+                  <li><a class="nav-drop-down" href="./component/solution.html?tab=1">林业/景区</a></li>
+                  <li><a class="nav-drop-down" href="./component/solution.html?tab=2">矿业</a></li>
+                  <li><a class="nav-drop-down" href="./component/solution.html?tab=3">医疗/校园</a></li>
+                  <li><a class="nav-drop-down" href="./component/solution.html?tab=4">物流</a></li>
+                  <li><a class="nav-drop-down" href="./component/solution.html?tab=5">其他</a></li>
+                </ul>
+              </div>
+            </li> -->
+            <!-- <li class="nav_down_one nav_down_one6">
+              <a href="./component/case.html" class="tab">系统案例</a>
+              <div class="nav-box-tab">
+                  <ul class="aboutus_skip">
+                    <li><a class="nav-drop-down" href="./component/case.html?tab=0">安保</a></li>
+                    <li><a class="nav-drop-down" href="./component/case.html?tab=1">林业/景区</a></li>
+                    <li><a class="nav-drop-down" href="./component/case.html?tab=2">矿业</a></li>
+                    <li><a class="nav-drop-down" href="./component/case.html?tab=3">医疗/校园</a></li>
+                    <li><a class="nav-drop-down" href="./component/case.html?tab=4">物流</a></li>
+                    <li><a class="nav-drop-down" href="./component/case.html?tab=5">其他</a></li>   
+                  </ul>
+              </div>
+            </li> -->
+            <!-- <li class="nav_down_one nav_down_one7">
+              <a href="./component/explore.html" class="tab">探索精彩</a>
+              <div class="nav-box-tab">
+                <ul class="aboutus_skip">
+                  <li><a class="nav-drop-down" href="./component/explore.html?tab=0">新闻中心</a></li>
+                  <li><a class="nav-drop-down" href="./component/explore.html?tab=1">精彩活动</a></li>
+                  <li><a class="nav-drop-down" href="./component/explore.html?tab=2">团建活动</a></li>
+                  <li><a class="nav-drop-down" href="./component/explore.html?tab=3">招聘精英</a></li>
+                </ul>
+              </div>
+            </li> -->
+            <!-- <li class="nav_down_one nav_down_one8">
+              <a href="./component/service.html" class="tab" >服务与支持</a>
+              <div class="nav-box-tab">
+                <ul class="aboutus_skip">
+                  <li><a class="nav-drop-down" href="./component/service.html?tab=0">产品支持</a></li>
+                  <li><a class="nav-drop-down" href="./component/service.html?tab=1">下载中心</a></li>
+                  <li><a class="nav-drop-down" href="./component/service.html?tab=2">联系我们</a></li>
+                </ul>
+              </div>
+            </li> -->
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right nav_right">
+            <div class="nav_right_box">
+              <div class="input-title-box">
+                <input class="input-title" type="text" placeholder="请输入">
+                <img class="input-seacch" src="./img/search.png" alt="">
+                <div class="nav_right_box_btn">中文</div>
+              </div>
+            
+             
+
+            </div>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <div class="nav-line"></div>
+    <!-- 头部导航结束 -->
+  </nav>
+  <!----------------------------------------------头部结束------------- -->
+  <!--banner-->
+  <div class="banner-box">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- <div class="swiper-slide"><img class="banner-img" src="img/index/index_banner1.jpg" alt=""></div> -->
+        <!-- <div class="swiper-slide"><img class="banner-img" src="img/index/index_banner2.jpg" alt=""></div>
+        <div class="swiper-slide"><img class="banner-img" src="img/index/index_banner3.jpg" alt=""></div>
+        <div class="swiper-slide"><img class="banner-img" src="img/index/index_banner4.jpg" alt=""></div> -->
+      </div>
+      <div class="swiper-button-next hidden-xs"></div>
+      <div class="swiper-button-prev hidden-xs"></div>
+      <!-- 分页器 -->
+      <div class="swiper-pagination banner-box-pag"></div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------->
+
+  <!-- 回到顶部 -->
+  <div class="broadside">
+    <ul>
+   
+      <li><a href="tencent://message/?uin=2862636017&Site=&Menu=yes"> 在线客服</a></li>
+      <li class="email_box"><div class="email_right">邮箱:ceo@auctus.cn</div> <a href="#" class="email-btn"> 邮件沟通</a></li>
+      <li class=""><a data-toggle="modal" data-target="#myModal"> 我要留言</a></li>
+      <li class="broadside_top">返回顶部</li>
+    </ul>
+  
+  </div>
+
+
+  <!-- 遮罩层模态框（Modal） -->
+  <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="mo_title">
+          <button type="button" class="close colse_1" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title " id="myModalLabel">
+            留言
+          </h4>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <span>*</span> <span class="mo-name">客户姓名:</span> <input class="sbmit_name" type="text" placeholder="请输入姓名">
+            </li>
+            <li>
+              <span>*</span> <span class="mo-name">手机/邮箱:</span> <input class="sbmit_phone" type="text" placeholder="请输入手机或邮箱">
+            </li>
+            <li>
+              <span>*</span> <span class="mo-name">留言内容:</span> <textarea  class="form-control sbmit_text_con" rows="3"
+                placeholder="请输入留言内容,我们会尽快与您联系"></textarea>
+            </li>
+              <p class="sbmit_hint"></p>
+          </ul>
+
+        </div>
+
+        <div class="modal-footer modal-footer1">
+          <button type="button" class="btn  btn22 btn_sbmit" data-dismiss="">发送
+          </button>
+          <button type="button" class="btn  btn33" data-dismiss="modal">
+            取消
+          </button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+  </div>
+
+
+
+  <div class="middle-box-box-big">
+    <div class="middle-box">
+      <div class="title_a">
+        <span class="company">公司</span>
+        <span class="tau">分布点</span>
+        <span class="eng">/Busienss Location</span>
+      </div>
+      <!-- 中间导航 -->
+      <!-- <div class="In_figure"> -->
+      <div class="navbox1">
+        <!-- <div>
+          <img src="img/home_img_shenzhen@2x.png" alt="">
+          <div class="navbox1-name">
+            <p>上海</p>
+          </div>
+        </div>
+        <div>
+          <img src="img/home_img_shanghai@2x.png" alt="">
+          <div class="navbox1-name"><span>深</span> <span>圳</span></div>
+        </div>
+        <div>
+          <img src="img/home_img_quanzhou@2x.png" alt="">
+          <div class="navbox1-name"><span>广</span> <span>州</span></div>
+        </div>
+        <div>
+          <img src="img/home_img_meiguo@2x.png" alt="">
+          <div class="navbox1-name"><span>香</span> <span>港</span></div>
+        </div>
+        <div>
+          <img src="img/home_img_guangzhou@2x.png" alt="">
+          <div class="navbox1-name"><span>泉</span> <span>州</span></div>
+        </div>
+        <div class="nav-box12">
+          <img src="img/home_img_guangzhou@2x.png" alt="">
+          <div class="navbox1-name"><span>美</span> <span>国</span></div>
+        </div> -->
+      </div>
+      <!-- 公司图片 -->
+    
+      <div class="nav-button-img">
+         <!-- 领先工厂 -->
+        <!-- <div class="Publicity_img1">
+         
+          <a href="#">
+          <img class="nav-but-img" src="./img/index/lingxian.jpg" alt="">
+        </a>
+        </div>
+        <div class="Publicity_img2">
+          <div class="choice">
+            <div class="choice-img">
+              <a href="">
+              <img class="choice-img1" src="img/index/chanpin.jpg" alt="">
+            </a>
+            </div>
+            <div class="choice-img">
+              <a href="">
+              <img class="choice-img2" src="img/index/jiejue.jpg" alt="">
+            </a>
+            </div>  -->
+          </div>
+
+
+          <!-- <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 Publicity_img1">
+             
+            </div> -->
+
+        </div>
+      </div>
+
+    </div>
+    <!-- 为什么选择我们 -->
+    <div class="Choose-us">
+      <!-- <img src="img/home_bg_why@2x.png" alt=""> -->
+      <div class="Choose-box1">
+        <!-- <img src="" alt=""> -->
+        <div class="Choose-box1-content ">
+          <!-- <div class="chose-box1-text">为什么选择我们</div> -->
+          <div class="Chose-box1-number">
+            <img src="" alt=""> 
+            <!-- <ul>
+              <li>
+                <p><span class="span0" data-start="0" date-end="5">5</span>   <em>+</em> </p>
+                <span>家子公司</span>
+              </li>
+              <li>
+                <p><span class="span1">228</span> <em>+</em> </p>
+                <span>项荣誉专利</span>
+              </li>
+              <li>
+                <p>300 <em>+</em> </p>
+                <span>各专业研发团队</span>
+              </li>
+              <li>
+                <p>60<em>+</em> </p>
+                <span>项荣誉奖项</span>
+              </li>
+              <li>
+                <p>11<em>+</em> </p>
+                <span>项发明专利</span>
+              </li>
+              <li>
+                <p>1000K<em>+</em> </p>
+                <span>终端仓库容量</span>
+              </li>
+              <li>
+                <p>1000万<em>+</em> </p>
+                <span>年营业额</span>
+              </li>
+            </ul> -->
+          </div>
+          <div class="Chose-box1-number-nav">
+                <img src="" alt="">
+          </div>
+   
+        </div>
+      </div>
+      <!-- 需求转化 研究与开发 磨具设计 smt 量产 支付 -->
+      <!-- <div class="Choose-box2">
+        <div class="Choose-box2-centent">
+          <img src="" alt="">
+
+        </div>
+      </div> -->
+
+    </div>
+    <!-- --------------------选择我们结束 -->
+
+
+    <!-- 新闻资讯 -->
+    <div class="journalism">
+      <div class="journalism-title">
+        <p>
+          <span class="journalism-title-text">新闻</span><span>资讯</span> <em>/New information</em></p>
+        <ul class="journalism-tab">
+          <li tabid="1" class="journalism-choice">公司新闻</li>
+          <li tabid="2">国内外展会</li>
+          <li tabid="3" class="journalism-tab-end">行业动态</li>
+          <!-- <li>-></li> -->
+        </ul>
+      </div>
+      <div class="journalism-box">
+        <!-- 公司新闻 -->
+        <div class="tab-item11 show11 tab-item11_box1">
+
+          <div class="tab-item11-img-box">
+            <!-- <div class="tab-item11-img-box1"><a href=""><img src="img/home_img_news1@2x.png" alt=""></a> </div>
+            <div class="tab-item11-img-box2"><a href=""><img src="img/home_img_news1@2x.png" alt=""></a> </div> -->
+          </div>
+
+          <ul class="journalism-news">
+            <!-- <li >
+              <a href="" class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </a>
+            </li>
+            <li >
+              <a href="" class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </a>
+            </li>
+            <li >
+              <a href="" class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </a>
+            </li>
+            <li>
+              <a href=""  class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </a>
+            </li> -->
+          </ul>
+      
+
+          <!-- <ul class="journalism-news journalism-news0 ">
+            <li class="journalism-news-li">
+              <ul class="journalism-news-list">
+                <a href="">
+                  <img src="img/home_img_news1@2x.png" alt="">
+
+                <li class="journalism-news-list-center">
+                  <p class="span-text"><span>20</span> <em>2019/09</em></p>
+                  <h5 class="journalism-list-p">
+                    <p class="title">大疆机甲大师 </p>
+                    <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+                  </h5>
+                </li>
+             
+                <li class="journalism-news-list-center">
+                  <p class="span-text"><span>20</span> <em>2019/09</em></p>
+                  <h5 class="journalism-list-p">
+                    <p class="title">大疆机甲大师 </p>
+                    <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+                  </h5>
+                </li>
+      
+                <li class="journalism-news-list-center">
+                  <p class="span-text"><span>20</span> <em>2019/09</em></p>
+                  <h5 class="journalism-list-p">
+                    <p class="title">大疆机甲大师 </p>
+                    <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+                  </h5>
+                </li>
+              </a>
+              </ul>
+            </li>
+  
+            <li class="journalism-news-li">
+              <ul class="journalism-news-list">
+                <a href="">
+                <li><img src="img/home_img_news1@2x.png" alt=""></li>
+                <li class="journalism-news-list-center">
+                  <p class="span-text"><span>20</span> <em>2019/09</em></p>
+                  <h5 class="journalism-list-p">
+                    <p class="title">大疆机甲大师 </p>
+                    <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+                  </h5>
+                </li>
+         
+                <li class="journalism-news-list-center">
+                  <p class="span-text"><span>20</span> <em>2019/09</em></p>
+                  <h5 class="journalism-list-p">
+                    <p class="title">大疆机甲大师 </p>
+                    <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+                  </h5>
+                </li>
+    
+                <li class="journalism-news-list-center">
+                  <p class="span-text"><span>20</span> <em>2019/09</em></p>
+                  <h5 class="journalism-list-p">
+                    <p class="title">大疆机甲大师 </p>
+                    <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+                  </h5>
+                </li>
+              </a>
+              </ul>
+            </li> 
+          </ul> -->
+        </div>
+
+        <!-- 国内外展会 -->
+        <div class="tab-item11 tab-item11_box2">
+          <!-- 国内展会111111111111111 -->
+          <div class="tab-item11-img-box">
+            <!-- <div class="tab-item11-img-box1"><img src="img/home_img_news1@2x.png" alt=""></div>
+            <div class="tab-item11-img-box2"><img src="img/home_img_news1@2x.png" alt=""></div> -->
+          </div>
+
+          <ul class="journalism-news">
+            <!-- <li class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </li>
+            <li class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </li>
+            <li class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </li>
+            <li class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </li> -->
+          </ul>
+        </div>
+
+        <!-- 行业动态 -->
+        <div class="tab-item11 tab-item11_box3">
+          <!-- 公司新闻333333333 -->
+          <div class="tab-item11-img-box">
+            <!-- <div class="tab-item11-img-box1"><img src="img/home_img_news1@2x.png" alt=""></div>
+            <div class="tab-item11-img-box2"><img src="img/home_img_news1@2x.png" alt=""></div> -->
+          </div>
+
+          <ul class="journalism-news">
+            <!-- <li class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </li>
+            <li class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </li>
+            <li class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </li>
+            <li class="journalism-news-list-center">
+              <p class="span-text"><span>20</span> <em>2019/09</em></p>
+              <h5 class="journalism-list-p">
+                <p class="title">大疆机甲大师 </p>
+                <p>专注用户体验。以情景+体验，直观、生动地展现最新的无线对讲技术、产品与应用及其给客户带来的价值。</p>
+              </h5>
+            </li> -->
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!-- ---------------------新闻资讯结束-->
+  </div>
+
+
+  
+  <!-- 底部 -->
+  <footer>
+    <div class="footer">
+      <div class="footer-box">
+        <div class="options">
+          <div class="options-box1">
+            <div class="footer_list_nav1">
+              <!-- <span class="title_one"><a href="#">产品中心</a> </span>
+              <span><a href="">芯片</a> </span>
+              <span><a href="">射频功放模块</a> </span>
+              <span><a href="">通信模块</a></span>
+              <span><a href="">终端设备</a></span>
+              <span><a href="">其他设备</a></span> -->
+            </div>
+
+            <div class="footer_list_nav2">
+              <!-- <span class="title_one"><a href="./component/case.html">系统案例</a></span>
+              <span><a href="./component/case.html?tab=0">安保</a></span>
+              <span><a href="./component/case.html?tab=1">林业/景区</a></span>
+              <span><a href="./component/case.html?tab=2">矿业</a></span>
+              <span><a href="./component/case.html?tab=3">医疗校园</a></span>
+              <span><a href="./component/case.html?tab=4">物流</a></span>
+              <span><a href="./component/case.html?tab=5">其他</a></span> -->
+            </div>
+
+            <div class="footer_list_nav3">
+              <!-- <span class="title_one"><a href="./component/solution.html">解决方案</a> </span>
+              <span><a href="./component/solution.html?tab=0">安保</a></span>
+              <span><a href="./component/solution.html?tab=1">林业/景区</a></span>
+              <span><a href="./component/solution.html?tab=2">矿业</a></span>
+              <span><a href="./component/solution.html?tab=3">医疗校园</a></span>
+              <span><a href="./component/solution.html?tab=4">物流</a></span>
+              <span><a href="./component/solution.html?tab=4">其他</a></span> -->
+            </div>
+            <div class="footer_list_nav4">
+              <!-- <span class="title_one"><a href="./component/explore.html">探索精彩</a> </span>
+              <span><a href="./component/explore.html?tab=0">新闻中心</a></span>
+              <span><a href="./component/explore.html?tab=1">精彩活动</a></span>
+              <span><a href="./component/explore.html?tab=2">团结活动</a></span>
+              <span><a href="./component/explore.html?tab=3">招聘精英</a></span> -->
+            </div>
+            <div class="footer_list_nav5">
+              <!-- <span class="title_one"><a href="./component/service.html">服务与支持</a></span>
+              <span><a href="./component/service.html?tab=0">产品支持</a></span>
+    
+              <span><a href="./component/service.html?tab=1">下载中心</a></span>
+              <span><a href="./component/service.html?tab=2">联系我们</a></span> -->
+            </div>
+
+            <div class="options-box2">
+              <span class="title_one"><a href="">订阅我们</a></span>
+              <span><a href="#">第一时间获得力同的最新动态</a></span>
+
+              <div class="email" data-toggle="modal" data-target="#myModal"><input placeholder="&nbsp; Email" type="text" /><span class="qs">></span></div>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div class="cooperation">
+          <div class="cooperation_left">
+           <a href=""><img src="img/foot_logo@2x.png" alt=""></a> 
+            <div>
+              <span><a href="./component/aboutus.html">关于我们</a></span>
+              <span><a href="./component/service.html?tab=2">联系我们</a></span>
+              <span><a href="./component/explore.html?tab=0">新闻中心</a></span>
+              <span><a href="./component/explore.html?tab=1">精彩活动</a></span>
+              <span><a href="./component/explore.html?tab=3">招聘中心</a></span>
+            </div>
+          </div>
+          <div class="cooperation_right">
+            <img class="img_1" src="img/foot_youku@2x.png" alt="">
+            <img class="img_2" src="img/foot_ic_language@2x.png" alt="">
+            <img class="img_3" src="img/foot_wechat@2x.png" alt="">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="copyright">
+        <div class="copyright-box">
+          <div class="address">
+            <div class="address_left">
+              <span>地址：深圳市南山区高新南一道009号 中国科技开发院3号楼17楼</span>
+            </div>
+            <div class="copyright_detail">
+              <span>版权所有：©️力同科技</span>
+              <span>粤ICP备12028371号-1</span>
+              <span>隐私权政策 · 使用条款 · 网站地图</span>
+            </div>
+           
+          </div>
+          
+          <div class="address_right">
+            <img src="img/foot_ic_language@2x.png" alt="">
+            <span>中国大陆/简体中文</span>
+            <!-- <span>V</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+
+
+
+
+  <script src="./js/swiper/swiper.min.js"></script>
+  <script src="./js/jq/jquery.min.js"></script>
+  <script src="./js/bs/bootstrap.min.js"></script>
+  <!-- <script src="./js/vue/vue.js"></script> -->
+  <!-- <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+  <script src="./js/com/api.js"></script>
+  <script src="./js/home/index.js"></script>
+
+
+
+
+</body>
+
+</html>
