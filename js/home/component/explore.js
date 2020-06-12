@@ -9,11 +9,13 @@
 
   //判断进入那个页面
       var tab=getQueryString("tab")
- 
+	console.log(tab,"/////////1111111111")
 
       if(tab){    
-        $(".plant_box_title_tab li").eq(tab).addClass("plant_box_title_tab_active").siblings().removeClass("plant_box_title_tab_active");
-        $("#exp_particular .particular_box").eq(tab).show().siblings(".plant_content .plant_title_tab_con").hide()
+        $(".plant_box_title_tab li").eq(tab-1).addClass("plant_box_title_tab_active").siblings().removeClass("plant_box_title_tab_active");
+        $("#exp_particular .particular_box").eq(tab-1).show().siblings(".plant_content .plant_title_tab_con").hide()
+		// $(".plant_box_title_tab li").eq(tab).addClass("plant_box_title_tab_active").siblings().removeClass("plant_box_title_tab_active");
+		// $("#exp_particular .particular_box").eq(tab).show().siblings(".plant_content .plant_title_tab_con").hide()
           
       }else{
         //直接进入调取
@@ -69,25 +71,6 @@
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   //初始化页面
 ajax("get",port.getcolum,"10",function(date){
  // //console.log(date,11)
@@ -102,30 +85,51 @@ ajax("get",port.getcolum,"10",function(date){
     <span>${list[i].name}</span>
     `
   }
+  console.log(tab,"mmmmmmmmm")
   $(".exp_box_title_tab").html(strlist);
-  $(".exp_box_title_tab span").eq(tab).addClass("exp_box_title_tab_active");
+  $(".exp_box_title_tab span").eq(tab-1).addClass("exp_box_title_tab_active");//20220-6-12
+  // $(".exp_box_title_tab span").eq(tab).addClass("exp_box_title_tab_active");
   //最后一个没有右边的线
   $(".exp_box_title_tab span").eq(list.length-1).addClass("exp_title_line")
   $(".exp_box_title_tab span").off("click").on("click",function(){
     var index = $(this).index();
-    switch(index){
-      case 0:
-          press_center()
-          break;       
-      case 1:
-            sp_activity()
-    　　　　break;  
-    　case 2:
-          team_activity()
-  　　　　  break;  
-  　　case 3:
-          invite()
-　　　　    break;  
-      default:        
-      　　　　break;
-    }   ;   
-    $(".exp_box_title_tab span").eq(index).addClass("exp_box_title_tab_active").siblings().removeClass("exp_box_title_tab_active");
-    $("#exp_particular .particular_box").eq(index).show().siblings("#exp_particular .particular_box").hide(); 
+	console.log(index,"////////")//0-1-2-3-4
+	// switch(index){
+	// 	  case 0:
+	// 		  press_center()//新闻中心
+	// 		  break;       
+	// 	  case 1:
+	// 			sp_activity()//精彩活动
+	// 	　　　　break;  
+	// 	　case 2:
+	// 		  team_activity()//团建
+	//   　　　　  break;  
+	//   　　case 3:
+	// 		  invite()//招聘
+	// 　　　　    break;  
+	// 	  default:        
+	// 	  　　　　break;
+	// 	}   ;
+		switch(index){
+			  case 0:
+				  sp_activity()//精彩
+				  break;       
+			  case 1:
+				 team_activity()//团建
+			　　 break;  
+			　case 2:
+				   invite()//招聘
+		  　　　　 break; 
+			  case 3:
+			  		press_center()//新闻中心
+			  		 break;  
+			  default:
+					 break;
+			}   ;
+	   $(".exp_box_title_tab span").eq(index).addClass("exp_box_title_tab_active").siblings().removeClass("exp_box_title_tab_active");
+	   $("#exp_particular .particular_box").eq(index).show().siblings("#exp_particular .particular_box").hide(); 
+    // $(".exp_box_title_tab span").eq(index).addClass("exp_box_title_tab_active").siblings().removeClass("exp_box_title_tab_active");
+    // $("#exp_particular .particular_box").eq(index).show().siblings("#exp_particular .particular_box").hide(); 
     });
 })
 
@@ -472,9 +476,6 @@ $(".press_page_list>li").eq(tab).addClass("tab-naext_active").siblings("li").rem
        }
 //结束
   }
-
-
-
 
 
 

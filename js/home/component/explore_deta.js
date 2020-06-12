@@ -10,8 +10,8 @@
   //判断进入那个页面
   var tab = getQueryString("tab")
   var id=getQueryString("id")
-  //console.log(tab,"tab")
- // //console.log(id,"id")
+  console.log(tab,"tab")
+ console.log(id,"id")
   if(tab=="解决方案" || tab=="系统案例"){
     $(".exp_box_img").hide();
   }else{

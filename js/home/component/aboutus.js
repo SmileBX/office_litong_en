@@ -66,8 +66,7 @@
       var strlogo=` <img class="banner-img" src="${imgapi+date[0].smallimages}" alt="">`
       $(".abo_banner").html(strlogo)
       //列表
-      // let taberlist=date[0].children;//元数据重复公司介绍 删除第一个 2020/6/11
-	  let taberlist=date[0].children.slice(1);
+      let taberlist=date[0].children;
       let stritem="";
      console.log(taberlist,"孩子")
       for(var i=0;i<taberlist.length;i++){
