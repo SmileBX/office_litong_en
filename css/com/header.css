@@ -20,8 +20,6 @@ nav {
   border-bottom: 1px solid #e7e7e7;
 }
 
-
-
 .nav-box {
   width: 1200px;
   margin: 0 auto;
@@ -39,6 +37,9 @@ nav {
 /* 头部导航 */
 .container>.navbar-brand{
 }
+/* .nav>li>a{
+ padding:10px 0px!important;
+} */
 .navbar-brand img {
   width: 118px;
   height: 24px;
@@ -48,6 +49,7 @@ nav {
 .navbar-header .navbar-brand{
   padding-left: 0px;
 }
+
 
 .navbar-left>li {
   height: 64px;

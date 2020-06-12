@@ -78,9 +78,12 @@ $(".nav_right_box_btn").click(function(){
    lan="cn"
   // $(location).attr('href', url);
   }
+  
+  $.cookie("language",lan,{ expires: 7, path: '/', secure: false });
    url=url+'?lan='+lan
     console.log(url,"828282")
   $(location).attr('href', url); 
+  
 })
 
 //我要留言提交
@@ -145,8 +148,19 @@ $(".btn_sbmit").click(function(){
  
 function ajax(type,portname,number,callback){
  // //console.log(lan,"这是地址")
+ //2020-6-12新增
+  // console.log($.cookie("language"),"565656565656")
+  // let language = $.cookie("language")
+  // if(language == 'en'){
+  // lan="en";
+  // $(".nav_right_box_btn").html("English")
+  // }else{
+  //  lan="cn";
+  //  $(".nav_right_box_btn").html("中文")
+  //  //console.log("没有获得只")
+  // }
+  // var m =getQueryString("lan");
 var m =getQueryString("lan");
-console.log(m,1111212121)
 if(m == 'en'){
 lan="en";
 $(".nav_right_box_btn").html("English")
@@ -350,8 +364,6 @@ function timestampToTime2(timestamp) {
     var r = window.location.search.substr(1).match(reg);  //匹配目标参数
     if( r != null ) return decodeURI( r[2] ); return null;   
 }
-
-
 
 
 
