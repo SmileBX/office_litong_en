@@ -68,7 +68,7 @@
       //列表
       let taberlist=date[0].children;
       let stritem="";
-     console.log(taberlist,"孩子")
+     // console.log(taberlist,"孩子")
       for(var i=0;i<taberlist.length;i++){
        stritem+=`<li>${taberlist[i].name}</li>`
       }

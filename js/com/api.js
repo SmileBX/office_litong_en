@@ -60,31 +60,31 @@ $(".input-title-box>input").click(function(){
 //}
 //$(".nav_right_box_btn").html(lancon)
 
-$(".nav_right_box_btn").click(function(){
-       //console.log(getQueryString) 
-	   console.log($(location)[0].href)
-       var url=$(location).attr("href");
-       if(url.indexOf("?")!=-1){                        //判断是否存在参数
-			url = url.replace(/(\?|#)[^'"]*/, '');           //去除参数
-		}
-  if($(this).html()=="中文"){
-    $(this).html("English")
-    lan="en"
-	 // url=url+'?lan=en'
-   // url=url+'?lan='+lan
-   // $(location).attr('href', url);
-  }else{
-    $(this).html("中文")
-   lan="cn"
-  // $(location).attr('href', url);
-  }
+// $(".nav_right_box_btn").click(function(){
+//        //console.log(getQueryString) 
+// 	   console.log($(location)[0].href)
+//        var url=$(location).attr("href");
+//        if(url.indexOf("?")!=-1){                        //判断是否存在参数
+// 			url = url.replace(/(\?|#)[^'"]*/, '');           //去除参数
+// 		}
+//   if($(this).html()=="中文"){
+//     $(this).html("English")
+//     lan="en"
+// 	 // url=url+'?lan=en'
+//    // url=url+'?lan='+lan
+//    // $(location).attr('href', url);
+//   }else{
+//     $(this).html("中文")
+//    lan="cn"
+//   // $(location).attr('href', url);
+//   }
   
-  $.cookie("language",lan,{ expires: 7, path: '/', secure: false });
-   url=url+'?lan='+lan
-    console.log(url,"828282")
-  $(location).attr('href', url); 
+//   $.cookie("language",lan,{ expires: 7, path: '/', secure: false });
+//    url=url+'?lan='+lan
+//     console.log(url,"828282")
+//   $(location).attr('href', url); 
   
-})
+// })
 
 //我要留言提交
 $(".btn_sbmit").click(function(){
@@ -96,13 +96,13 @@ $(".btn_sbmit").click(function(){
   if(str0 =="" || str1=="" || str2==""){
     $(".sbmit_hint").removeClass("sbmit_hint_g")
     if(str0 ==""){
-      $(".sbmit_hint").html("姓名不能为空")
+      $(".sbmit_hint").html("The name cannot be empty")
     }
     if(str1 ==""){
-      $(".sbmit_hint").html("电话或邮箱不能为空")
+      $(".sbmit_hint").html("Your phone or email address must not be empty")
     }
     if(str2 ==""){
-      $(".sbmit_hint").html("留言内容不能为空")
+      $(".sbmit_hint").html("The message cannot be empty")
     }
 
 
@@ -119,7 +119,7 @@ $(".btn_sbmit").click(function(){
        $(".modal-body .sbmit_phone").val("");
        $(".modal-body .sbmit_text_con").val("");
      
-       $(".sbmit_hint").html("留言成功,我们会尽快与您联系")
+       $(".sbmit_hint").html("Message is successful, we will contact you as soon as possible")
        $(".sbmit_hint").addClass("sbmit_hint_g");
 
           
@@ -131,7 +131,7 @@ $(".btn_sbmit").click(function(){
       },
       "error":function(req){
           //console.log(req,"错误");
-          $(".sbmit_hint").html("留言失败")
+          $(".sbmit_hint").html("Message failed")
            $(".sbmit_hint").removeClass("sbmit_hint_g");
       }
 
@@ -160,17 +160,17 @@ function ajax(type,portname,number,callback){
   //  //console.log("没有获得只")
   // }
   // var m =getQueryString("lan");
-var m =getQueryString("lan");
-if(m == 'en'){
-lan="en";
-$(".nav_right_box_btn").html("English")
-}else{
- lan="cn";
- $(".nav_right_box_btn").html("中文")
- //console.log("没有获得只")
-}
+	// var m =getQueryString("lan");
+	// if(m == 'en'){
+	// 	lan="en";
+	// 	$(".nav_right_box_btn").html("English")
+	// }else{
+	//  lan="cn";
+	//  $(".nav_right_box_btn").html("中文")
+	//  //console.log("没有获得只")
+	// }
 
-  var pageTotal = 0;
+ //  var pageTotal = 0;
   $.ajax({
     //"url":ltapi+portname+"?"+"lan="+lan+"&"+"t="+number,
     "url":ltapi+portname+"/"+"lan/"+lan+"/"+"t/"+number,
@@ -666,8 +666,8 @@ $(".broadside_top").click(function(){
      `;
    }
    strfooternav+=`<div class="options-box2">
-    <span class="title_one"><a href="">订阅我们</a></span>
-    <span><a href="#">第一时间获得力同的最新动态</a></span>
+    <span class="title_one"><a href="">Subscribe</a></span>
+    <span><a href="#">The first time to get the latest dynamics of Litong</a></span>
 
     <div class="email" data-toggle="modal" data-target="#myModal"><input placeholder="&nbsp; Email" type="text" /><span class="qs">></span></div>
   </div>`;

@@ -159,7 +159,7 @@
 	  for(var i=0;i<date.length;i++){
 		strlist+=`
 		<li>
-		  <a href="./explore_deta.html?tab=公司首页&id=${date[i].id}" class="journalism-news-list-center">
+		  <a href="./explore_deta.html?tab=HomePage&id=${date[i].id}" class="journalism-news-list-center">
 		  <p class="span-text"><span>${timestampToTime3(date[i].createtime)}</span> <em>${timestampToTime4(date[i].createtime)}</em></p>
 		  <h5 class="journalism-list-p">
 			<p class="title">${date[i].name} </p>
@@ -191,7 +191,7 @@
 	  for(var i=0;i<date.length;i++){
 		strlist+=`
 		<li>
-		  <a href="./explore_deta.html?tab=公司首页&id=${date[i].id}" class="journalism-news-list-center">
+		  <a href="./explore_deta.html?tab=HomePage&id=${date[i].id}" class="journalism-news-list-center">
 		  <p class="span-text"><span>${timestampToTime3(date[i].createtime)}</span> <em>${timestampToTime4(date[i].createtime)}</em></p>
 		  <h5 class="journalism-list-p">
 			<p class="title">${date[i].name} </p>
@@ -218,7 +218,7 @@
 	  for(var i=0;i<date.length;i++){
 		strlist+=`
 		<li>
-		  <a href="./explore_deta.html?tab=公司首页&id=${date[i].id}" class="journalism-news-list-center">
+		  <a href="./explore_deta.html?tab=HomePage&id=${date[i].id}" class="journalism-news-list-center">
 		  <p class="span-text"><span>${timestampToTime3(date[i].createtime)}</span> <em>${timestampToTime4(date[i].createtime)}</em></p>
 		  <h5 class="journalism-list-p">
 			<p class="title">${date[i].name} </p>

@@ -134,10 +134,10 @@ $.ajax({
   dataType : "json",
   "success":function(date){
 
-    var str0="<option value='0'>选择产品型号</option>";
-    var str1="<option value='0'>选择产品类型</option>";
-    var str2="<option value='0'>选择产品系列</option>";
-    var str3="<option value='0'>选择产品分类</option>";
+    var str0="<option value='0'>Select Your Product Model</option>";
+    var str1="<option value='0'>Select Your Product Family</option>";
+    var str2="<option value='0'>Select product line</option>";
+    var str3="<option value='0'>Select product category</option>";
     for(var i=0;i<date.model2.length;i++){
       str0+=`
       <option value="${date.model2[i].id}">${date.model2[i].name}</option> 
@@ -305,11 +305,11 @@ function down_fun(port_id,con_class,active_class){
     "type":"get",
     dataType : "json",
     "success":function(date){
-
-      var str0="<option value='0'>选择产品型号</option>";
-      var str1="<option value='0'>选择产品类型</option>";
-      var str2="<option value='0'>选择产品系列</option>";
-      var str3="<option value='0'>选择产品分类</option>";
+	  
+	  var str0="<option value='0'>Select Your Product Model</option>";
+	  var str1="<option value='0'>Select Your Product Family</option>";
+	  var str2="<option value='0'>Select product line</option>";
+	  var str3="<option value='0'>Select product category</option>";
       for(var i=0;i<date.model2.length;i++){
         str0+=`
         <option value="${date.model2[i].id}">${date.model2[i].name}</option> 

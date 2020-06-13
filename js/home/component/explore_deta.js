@@ -12,7 +12,7 @@
   var id=getQueryString("id")
   console.log(tab,"tab")
  console.log(id,"id")
-  if(tab=="解决方案" || tab=="系统案例"){
+  if(tab=="solution" || tab=="System Case"){
     $(".exp_box_img").hide();
   }else{
 
@@ -50,10 +50,10 @@
     var next=date2.next;
     //console.log(tab,"23")
     var strprev=`
-    <a href="./explore_deta.html?tab=${tab}&id=${prev.id}"><span>上一篇</span> <em>${prev.name}</em></a> 
+    <a href="./explore_deta.html?tab=${tab}&id=${prev.id}"><span>previous posts</span> <em>${prev.name}</em></a> 
     `;
     var strnext=`
-    <a href="./explore_deta.html?tab=${tab}&id=${next.id}"><span>下一篇</span> <em>${next.name}</em></a> 
+    <a href="./explore_deta.html?tab=${tab}&id=${next.id}"><span>next chapter</span> <em>${next.name}</em></a> 
     `;
     $(".par_footer p").eq(0).html(strprev);
     $(".par_footer p").eq(1).html(strnext);
@@ -71,33 +71,33 @@
 
 
   switch(tab){
-    case "行业动态":
+    case "Industry Dynamics":
           //console.log(tab);
-          $(".ret").html("返回"+tab+"列表").attr("href","./explore.html?tab=0");
+          $(".ret").html("return"+tab+" list").attr("href","./explore.html?tab=0");
           $(".exp_box_title_tab>a").eq(0).addClass("exp_box_title_tab_active").siblings().removeClass("exp_box_title_tab_active");
        
           break;
-    case "公司动态":
+    case "Company Dynamic":
          // //console.log(tab);
-          $(".ret").html("返回"+tab+"列表").attr("href","./explore.html?tab=0");
+          $(".ret").html("return"+tab+" list").attr("href","./explore.html?tab=0");
           $(".exp_box_title_tab>a").eq(0).addClass("exp_box_title_tab_active").siblings().removeClass("exp_box_title_tab_active");
           break;
-    case "国内展会":
+    case "China Show":
          // //console.log(tab);
-          $(".ret").html("返回"+tab+"列表").attr("href","./explore.html?tab=1");;
+          $(".ret").html("return"+tab+" list").attr("href","./explore.html?tab=1");;
           $(".exp_box_title_tab>a").eq(1).addClass("exp_box_title_tab_active").siblings().removeClass("exp_box_title_tab_active");
           break;
-    case "精彩活动":
+    case "wonderful activity":
          // //console.log(tab);
-          $(".ret").html("返回"+tab+"列表").attr("href","./explore.html?tab=1");
+          $(".ret").html("return"+tab+" list").attr("href","./explore.html?tab=1");
           $(".exp_box_title_tab>a").eq(1).addClass("exp_box_title_tab_active").siblings().removeClass("exp_box_title_tab_active");
           break;
-    case "公司首页":
+    case "HomePage":
           // //console.log(tab);
-           $(".ret").html("返回"+tab).attr("href","./index.html");
+           $(".ret").html("return"+tab).attr("href","./index.html");
            //$(".exp_box_title_tab>a").eq(1).addClass("exp_box_title_tab_active").siblings().removeClass("exp_box_title_tab_active");
            break;
-    case "解决方案":
+    case " solution":
            // //console.log(tab);
       
            $(".exp_box_title").hide();
@@ -109,9 +109,9 @@
              $(".exp_box_img").html(strbanenr);
              $(".exp_box_img").show();
             });
-            $(".ret").html("返回"+tab).attr("href","./solution.html");
+            $(".ret").html("return"+tab).attr("href","./solution.html");
             break;
-    case "系统案例":
+    case "System Case":
             // //console.log(tab);
       
             ajax("get",port.getcolum,"9",function(date){
@@ -124,7 +124,7 @@
               });
          
             $(".exp_box_title").hide();
-             $(".ret").html("返回"+tab).attr("href","./case.html");
+             $(".ret").html("return"+tab).attr("href","./case.html");
              break;
     defauit:
           console.log("错误")

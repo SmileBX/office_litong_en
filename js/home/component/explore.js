@@ -233,7 +233,7 @@ for (var i =tabnumber; i < date.length; i++) {
         <li>
         <p>${date[i].abstract}</p>
         </li>
-        <li><a href="./explore_deta.html?tab=行业动态&&id=${date[i].id}">查看详情>></a></li>
+        <li><a href="./explore_deta.html?tab=Industry News&&id=${date[i].id}">See Detail>></a></li>
       </ul>
     </div>
     <div class="press_list_right_img">
@@ -266,7 +266,7 @@ for (var i =tabnewnumber ; i <newnumber_legth ; i++) {
         <li>
           <p>${date[i].abstract}</p>
         </li>
-        <li><a href="./explore_deta.html?tab=行业动态&&id=${date[i].id}">查看详情>></a></li>
+        <li><a href="./explore_deta.html?tab=Industry News&&id=${date[i].id}">See Detail>></a></li>
       </ul>
     </div>
     <div class="press_list_right_img">
@@ -410,7 +410,7 @@ $(".press_page_list>li").eq(tab).addClass("tab-naext_active").siblings("li").rem
              <p class="exh_title_con">
                    ${date[i].abstract}
              </p>
-             <a class="exh_title_con_loc" href="./explore_deta.html?tab=国内展会&&id=${date[i].id}">了解更多</a>
+             <a class="exh_title_con_loc" href="./explore_deta.html?tab=China Show&&id=${date[i].id}">Learn more </a>
            </li>`
          }
  
@@ -430,7 +430,7 @@ $(".press_page_list>li").eq(tab).addClass("tab-naext_active").siblings("li").rem
              <p class="exh_title_con">
                    ${date[i].abstract}
              </p>
-             <a class="exh_title_con_loc" href="./explore_deta.html?tab=国内展会&&id=${date[i].id}">了解更多</a>
+             <a class="exh_title_con_loc" href="./explore_deta.html?tab=China Show&&id=${date[i].id}">Learn more</a>
            </li>`
          }
  
@@ -597,7 +597,7 @@ function invite(){
           <span>${string_arr2(date[i].name)[2]}</span>
           <span>${string_arr2(date[i].name)[3]}</span>
           <span>${timestampToTime(date[i].updatetime) }</span>
-          <span>查看详情<span class="caret1 "></span></span>
+          <span>See details<span class="caret1 "></span></span>
         </div>
   
         <div class="job-list-con-box2">

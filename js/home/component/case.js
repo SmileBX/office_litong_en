@@ -220,7 +220,7 @@ function listfun2(port_id,con_class,page_class,prevclass,nextclass){
 
             <div class="exh_box"><img class="exh_box_img" src="${imgapi+date[i].articleimage}" alt=""></div>
             <p class="exh_title">${date[i].title}</p>
-            <a class="exh_title_con_loc" href="./explore_deta.html?tab=系统案例&id=${date[i].id}">查看详情>></a>
+            <a class="exh_title_con_loc" href="./explore_deta.html?tab=System Case&id=${date[i].id}">See details>></a>
           </li>`
          }
          $(con_class+">ul").html(str2)
