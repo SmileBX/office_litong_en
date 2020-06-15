@@ -58,8 +58,8 @@ $(".input-title-box>input").click(function(){
 //  }
 //
 //}
-//$(".nav_right_box_btn").html(lancon)
-
+// $(".nav_right_box_btn").html(lancon)
+//    var m =getQueryString("lan");
 // $(".nav_right_box_btn").click(function(){
 //        //console.log(getQueryString) 
 // 	   console.log($(location)[0].href)
@@ -85,6 +85,21 @@ $(".input-title-box>input").click(function(){
 //   $(location).attr('href', url); 
   
 // })
+
+//中英文切换
+$(".nav_right_box_btn").click(function(){
+       var m =getQueryString("tab");
+	   console.log(m,"tab")
+	   let tabUrl = ''
+  if($(this).html()=="中文"){
+    tabUrl = 'official_en/index.html?tab='+m
+  }else{
+   tabUrl = '../official_cn/index.html?tab='+m
+  }
+  
+  // $(location).attr('href', tabUrl); 
+  
+})
 
 //我要留言提交
 $(".btn_sbmit").click(function(){
